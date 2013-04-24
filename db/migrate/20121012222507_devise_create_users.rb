@@ -4,19 +4,19 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
 
       #user info
-      t.string :b_address,          :null => false, :default => ""
-      t.string :b_suite_apt,        :null => false, :default => ""
-      t.string :b_city,             :null => false, :default => ""
-      t.string :b_state,            :null => false, :default => ""
-      t.string :b_zipcode,          :null => false, :default => ""
-      t.string :b_country,          :null => false, :default => ""
+      # t.string :b_address,          :null => false, :default => ""
+      # t.string :b_suite_apt,        :null => false, :default => ""
+      # t.string :b_city,             :null => false, :default => ""
+      # t.string :b_state,            :null => false, :default => ""
+      # t.string :b_zipcode,          :null => false, :default => ""
+      # t.string :b_country,          :null => false, :default => ""
 
-      t.string :s_address,          :null => false, :default => ""
-      t.string :s_suite_apt,        :null => false, :default => ""
-      t.string :s_city,             :null => false, :default => ""
-      t.string :s_state,            :null => false, :default => ""
-      t.string :s_zipcode,          :null => false, :default => ""
-      t.string :s_country,          :null => false, :default => ""
+      # t.string :s_address,          :null => false, :default => ""
+      # t.string :s_suite_apt,        :null => false, :default => ""
+      # t.string :s_city,             :null => false, :default => ""
+      # t.string :s_state,            :null => false, :default => ""
+      # t.string :s_zipcode,          :null => false, :default => ""
+      # t.string :s_country,          :null => false, :default => ""
 
       ## Database authenticatable
       t.string :email,              :null => false, :default => ""
