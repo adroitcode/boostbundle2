@@ -7,11 +7,11 @@ Rails 3.2 example application with recurring billing using Stripe. Use for a Rai
 * "Twitter Bootstrap":http://twitter.github.com/bootstrap/ front-end framework for CSS styling
 * "Stripe":https://stripe.com/ for recurring billing and subscription management
 
-Best of all, there's a "detailed tutorial":https://tutorials.railsapps.org/rails-stripe-membership-saas to show how it's built.
+Best of all, there's a "detailed tutorial":https://tutorials.railsapps.org/boostbundle2 to show how it's built.
 
 You can build this application in only a few minutes using the "Rails Composer":http://railsapps.github.com/rails-composer/ tool.
 
-!http://railsapps.github.com/images/rails-stripe-membership-saas.png(Rails Application for a Membership, Subscription, or SaaS Site)!
+!http://railsapps.github.com/images/boostbundle2.png(Rails Application for a Membership, Subscription, or SaaS Site)!
 
 h2. !http://twitter-badges.s3.amazonaws.com/t_logo-a.png(Follow on Twitter)!:http://www.twitter.com/rails_apps Follow on Twitter
 
@@ -21,7 +21,7 @@ h2. Tutorial
 
 A complete tutorial is available:
 
-h4. "View the Tutorial":https://tutorials.railsapps.org/rails-stripe-membership-saas
+h4. "View the Tutorial":https://tutorials.railsapps.org/boostbundle2
 
 The tutorial documents each step to follow to create the application. Every step is documented concisely, so a complete beginner can create this application without any additional knowledge. However, no explanation is offered for any of the steps, so if you are a beginner, you’re advised to look for an introduction to Rails elsewhere. See a list of recommended resources for "Rails":http://railsapps.github.com/rails.html.
 
@@ -93,7 +93,7 @@ h3. Clone
 If you want to copy and customize the app with changes that are only useful for your own project, you can clone the GitHub repo. You'll need to search-and-replace the project name throughout the application. You probably should generate the app instead (see below). To clone:
 
 <pre>
-$ git clone git://github.com/RailsApps/rails-stripe-membership-saas.git
+$ git clone git://github.com/RailsApps/boostbundle2.git
 </pre>
 
 You'll need "git":http://git-scm.com/ on your machine. See "Rails and Git":http://railsapps.github.com/rails-git.html.
@@ -105,14 +105,14 @@ If you want to use the project as a starter app, use the "Rails Composer":http:/
 To build the example application, run the command:
 
 <pre>
-$ rails new rails-stripe-membership-saas -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb -T
+$ rails new boostbundle2 -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb -T
 </pre>
 
 Use the @-T@ flag to skip Test::Unit files.
 
 The @$@ character indicates a shell prompt; don't include it when you run the command.
 
-This creates a new Rails app named @rails-stripe-membership-saas@ on your computer. You can use a different name if you wish.
+This creates a new Rails app named @boostbundle2@ on your computer. You can use a different name if you wish.
 
 You'll see a prompt:
 
@@ -507,7 +507,7 @@ It uses Stripe for payment processing, allows users to change credit cards or su
 
 You might consider a few enhancements. For example, you might want the application to respond to a Stripe webhook event when a credit card payment is successful by sending a "paid" invoice. Or you might respond to Stripe webhook events when credit card payments are unsuccessful by sending a friendly note encouraging the user to check for an expired credit card before the subscription is cancelled.
 
-If you have suggestions for additional features, please create an "issue":http://github.com/RailsApps/rails-stripe-membership-saas/issues on GitHub.
+If you have suggestions for additional features, please create an "issue":http://github.com/RailsApps/boostbundle2/issues on GitHub.
 
 h2. Testing
 
@@ -523,15 +523,15 @@ Please send the author a message, create an issue, or submit a pull request if y
 
 h2. Troubleshooting
 
-Problems? Check the "issues":https://github.com/RailsApps/rails-stripe-membership-saas/issues.
+Problems? Check the "issues":https://github.com/RailsApps/boostbundle2/issues.
 
 h2. Documentation
 
-The "tutorial":https://tutorials.railsapps.org/rails-stripe-membership-saas provides additional documentation.
+The "tutorial":https://tutorials.railsapps.org/boostbundle2 provides additional documentation.
 
 h2. Issues
 
-Please create a "GitHub issue":http://github.com/RailsApps/rails-stripe-membership-saas/issues if you identify any problems or have suggestions for improvements.
+Please create a "GitHub issue":http://github.com/RailsApps/boostbundle2/issues if you identify any problems or have suggestions for improvements.
 
 h2. Where to Get Help
 
@@ -543,7 +543,7 @@ h2. Contributing
 
 If you make improvements to this application, please share with others.
 
-Send the author a message, create an "issue":http://github.com/RailsApps/rails-stripe-membership-saas/issues, or fork the project and submit a pull request.
+Send the author a message, create an "issue":http://github.com/RailsApps/boostbundle2/issues, or fork the project and submit a pull request.
 
 If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
 
@@ -566,7 +566,7 @@ h2. Useful Links
 
 |_. Getting Started |_. Articles |_. Tutorials |
 | "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial (recommendations) | "Heroku and Rails":http://railsapps.github.com/rails-heroku-tutorial.html | "Devise with CanCan and Twitter Bootstrap":https://tutorials.railsapps.org/rails3-bootstrap-devise-cancan |
-| "Rails":http://railsapps.github.com/rails.html (resources)| "Twitter Bootstrap and Rails":http://railsapps.github.com/twitter-bootstrap-rails.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
+| "Rails":http://railsapps.github.com/rails.html (resources)| "Twitter Bootstrap and Rails":http://railsapps.github.com/twitter-bootstrap-rails.html | "Rails Membership Site with Stripe":https://tutorials.railsapps.org/boostbundle2 |
 | "Installing Rails":http://railsapps.github.com/installing-rails.html | "JavaScript and Rails":http://railsapps.github.com/rails-javascript-include-external.html | "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
 | "Updating Rails":http://railsapps.github.com/updating-rails.html | "Rails Environment Variables":http://railsapps.github.com/rails-environment-variables.html | "Startup Prelaunch Signup Application":http://railsapps.github.com/tutorial-rails-prelaunch-signup.html |
 | "Rails Composer":http://railsapps.github.com/rails-composer/ | "Git and GitHub with Rails":http://railsapps.github.com/rails-git.html | "Devise with RSpec and Cucumber":http://railsapps.github.com/tutorial-rails-devise-rspec-cucumber.html |

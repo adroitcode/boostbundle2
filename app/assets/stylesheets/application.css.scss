@@ -11,3 +11,465 @@
  *= require_self
  *= require_tree .
 */
+
+
+header {
+
+	width: 100%;
+	height: 75px;
+	background-color:#fff;
+}
+
+.s_font {
+    font-family: 'FuturaLT-Bold', sans-serif;  
+    font-size: 15px;  
+}
+.m_font {
+    font-family: 'FuturaLT-Bold', sans-serif;  
+    font-size: 25px;  
+}
+.ml_font {
+    font-family: 'FuturaLT-Bold', sans-serif;  
+    font-size: 30px;  
+}
+.l_font {
+    font-family: 'FuturaLT-Bold', sans-serif;  
+    font-size: 40px;  
+}
+
+.f_white {
+    color: #fff;
+}
+
+.f_black{
+    color: rgb(51, 51, 51);
+}
+
+#header_options {
+    color:#333333;
+    margin: 0px;
+    margin-top: 25px;
+    margin-right: 10%;
+    float:left;
+    font-size: 15px;
+    font-family: 'FuturaLT-Bold', sans-serif;
+    font-weight: 10;    
+    text-decoration: none;
+    float:right;
+}
+
+#anchor{
+    position:relative;
+    padding-top: 100px;
+}
+.links {
+    margin-left: 30px;
+}
+.links:hover {
+    text-decoration: none;
+    color: #1fa3ff; 
+}
+
+
+#home_logo {
+    width: 200px;
+    margin: 0px;
+    margin-top: 25px;
+    margin-left:10%;
+    float:left;
+    text-align:left;
+    font-size: 35px;
+    font-family: 'FuturaLT-Bold', sans-serif;
+    font-weight: 900;
+}
+
+#home_logo:hover {
+    text-decoration: none;
+    color: #1fa3ff;
+}
+
+
+.box {
+	position:relative;
+	vertical-align:middle;
+}
+
+
+body {
+
+	margin: 0px;
+	padding: 0px;
+}
+
+#welcome_panel{
+	background-color:#1fa3ff;	
+    background-image:url('../images/starnight.jpg');
+    background-color: #333;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+}
+
+#facebook_img {
+  content:url('/images/facebook.png');  
+}
+
+#twitter_img{
+  content:url('/images/twitter.png');     
+}
+
+#youtube_img {
+  content:url('/images/youtube.png');     
+}
+
+#pinterest_img {
+  content:url('/images/pinterest.png');   
+}
+
+#gplus_img{
+  content:url('/images/gplus.png');
+}
+
+
+
+
+#signup_label{
+
+}
+.information_label{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#info_panel{
+	background-color:inherit;
+}
+
+#info_head{
+    padding-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 500;
+}
+
+#info_body {
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0.7;
+}
+
+#personal_card_panel{
+	background-color:inherit;
+    height:500px;
+    
+}
+#shipping_panel {
+    background-color:inherit;
+    height: 700px;
+}
+#signup_label{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:25%;
+}
+#input_fields{
+    text-align:left;    
+}
+
+#login_panel{
+    background-color:inherit;
+    text-align: center;
+}
+
+.card_form {
+
+}
+
+#contact_panel{
+    background-color:inherit;
+    text-align:center;
+    height: 230px;  
+}
+#contact_holder{
+    text-align: center;
+    padding-top: 3%;
+    margin: 0px auto;
+    height: 100px;
+    width: 240px;
+
+}
+#contact_text {
+    color: #fff;
+}
+
+#login_form{
+    text-align: left;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-left: 42%;
+    float:left;
+}
+
+#personal_info{
+	float:left;
+	margin-left: 100px;
+	width: 300px;
+}
+
+#signup_info{
+	padding-top: 50px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#home_content{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-right: 10%;
+    font-stretch: 900px;
+    float:right;
+    color:#fff;
+    text-align: left;
+    font-size: 75px;
+    line-height: 15px;
+    font-family: 'FuturaLT-Bold', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#user_panel {
+
+}
+
+#success_panel{
+    margin: 0px;
+    text-align: center;
+}
+
+#success_holder{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
+    border:2px solid;
+    border-radius:25px;
+    background-color: #101e28;
+    height: 280px;
+    float:left;
+    
+}
+#success_text{
+    text-align: left;
+    float:left;
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'FuturaLT-Bold', sans-serif;
+    color: #fff;
+    font-weight: 900;   
+}
+
+
+table#users_table {
+    height: 500px;
+}
+
+section {
+	display: block;
+	height: auto;
+	width: 100%;
+	position: relative;	
+}
+.grey {
+	background-color: #ddd;
+	
+}
+.blue {
+	background-color:#1fa3ff;	
+}
+.grey {
+    background-color: #C0C0C0;   
+}
+.d_grey{
+    background-color:#666666;
+}
+.seperation {
+	top:-40px;
+	height:40px;
+	width:100%;
+	margin:0px;
+	padding:0px;	
+	position: absolute;
+
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	outline: none;
+}
+
+section > div.seperation > div.seperation-left {
+    position:absolute;
+    width:50%;
+    height:40px;
+    top:0;
+    left:0;
+    background-color:#fff;
+    margin:0 0 0 -90px;
+}
+section > div.seperation > div.seperation-left:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:-90px;
+    height:0;
+    width:0;
+    border-left:90px solid transparent;
+    border-right:90px solid transparent;
+    border-bottom:40px solid #fff;
+}
+section > div.seperation > div.seperation-right {
+    position:absolute;
+    width:50%;
+    height:40px;
+    top:0;
+    left:50%;
+    background-color:#fff;
+    margin:0 0 0 90px;
+}
+section > div.seperation > div.seperation-right:after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:-90px;
+    height:0;
+    width:0;
+    border-left:90px solid transparent;
+    border-right:90px solid transparent;
+    border-bottom:40px solid #fff;
+}
+
+section.blue > div.seperation > div.seperation-left, section.blue > div.seperation > div.seperation-right {
+    background-color:#1fa3ff;
+}
+section.blue > div.seperation > div.seperation-left:after, section.blue > div.seperation > div.seperation-right:after {
+    border-bottom:40px solid #1fa3ff;
+}
+
+section.grey {
+    background-color: #C0C0C0;
+}
+section.grey > div.seperation > div.seperation-left, section.grey > div.seperation > div.seperation-right {
+    background-color:#C0C0C0;
+}
+section.grey > div.seperation > div.seperation-left:after, section.grey > div.seperation > div.seperation-right:after {
+    border-bottom:40px solid #C0C0C0;
+}
+
+section.d_grey > div.seperation > div.seperation-left, section.d_grey > div.seperation > div.seperation-right {
+    background-color:#666666;
+}
+section.d_grey > div.seperation > div.seperation-left:after, section.d_grey > div.seperation > div.seperation-right:after {
+    border-bottom:40px solid #666666;
+}
+
+
+.wrapper{
+  min-height:100%;
+  position:relative;    
+}
+.panel {
+	width:100%;
+    height: 600px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+
+
+#user_info_input {
+    float:left;
+    width: 300px;
+    margin-left: 25%;
+}
+
+
+#payment_info_input {
+    float:right;
+    text-align: right;
+    width: 300px;
+    margin-right: 25%;
+}
+
+#submit_panel{
+    text-align: center;
+    height: 150px;
+}
+#submit_form_holder{
+    padding-top: 3%;
+    margin: 0px auto;
+    width: 300px;
+}
+#signup_button {
+    width: 200px;
+    height: 75px;
+    font-size: 35px;
+    font-family: 'FuturaLT-Bold', sans-serif;
+    font-weight: 200;
+}
+
+
+
+#billing_address_input{
+    clear:both;  
+    float:left;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+
+#shipping_address_input{
+    float:right;
+    text-align: right;
+    width: 300px;
+    margin-top: 5%;
+    margin-right: 25%;
+}
+
+
+footer {
+    width: 100%;
+    bottom:0;
+    height: 45px;
+    background-color: #003366;
+    position:relative;
+}
+
+#footer_holder {
+    padding: 10px;
+    padding-top: 12px;
+    color: #fff;
+}
+
+.simple-form {
+    margin: 0px;
+}
+
+.card_form {
+    margin: 0px;
+}
+
+.form-vertical {
+    margin: 0px;
+}

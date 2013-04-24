@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121017180539) do
+ActiveRecord::Schema.define(:version => 20130422063217) do
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,18 @@ ActiveRecord::Schema.define(:version => 20121017180539) do
     t.string   "name"
     t.string   "customer_id"
     t.string   "last_4_digits"
+    t.string   "b_address"
+    t.string   "b_suite_apt"
+    t.string   "b_city"
+    t.string   "b_state"
+    t.string   "b_zipcode"
+    t.string   "b_country"
+    t.string   "s_address"
+    t.string   "s_suite_apt"
+    t.string   "s_city"
+    t.string   "s_state"
+    t.string   "s_zipcode"
+    t.string   "s_country"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

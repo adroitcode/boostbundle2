@@ -1,3 +1,58 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { 
+  padding-top: 0px; 
+  height: 100%;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+	padding: 0px;
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
+    max-width: none;
+    width: auto;
+    overflow: auto;
+}
+table.table {
+	table-layout: fixed;
+    word-wrap: break-word;
+	height: 200px;
+	white-space: nowrap;
+    max-width: none;
+    width: auto;
+    overflow: auto;
+}
+
+#card_month {
+	width: 140px;
+}
+
+#card_year{
+	width: 75px;
+}
+
+
+form{
+
+}
+
+
+body.content {
+	margin: 0px;
+	padding: 0px;
+}
 @import "bootstrap-responsive";

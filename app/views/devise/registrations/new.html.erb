@@ -1,38 +1,120 @@
 <% content_for :head do %>
-  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
-<% end %>
-<h2>Sign up</h2>
-<div id="stripe_error" class="alert alert-error" style="display:none" >
-</div>
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'card_form form-vertical' }) do |f| %>
-  <h3><%= params[:plan].titleize if params[:plan] %> Subscription Plan</h3>
-  <%= hidden_field_tag 'plan', params[:plan] %>
-  <%= f.error_notification %>
-  <%= display_base_errors resource %>
-  <%= f.input :name, :autofocus => true %> 
-  <%= f.input :email, :required => true %>
-  <%= f.input :password, :required => true %>
-  <%= f.input :password_confirmation, :required => true %>
-  <% if @user.stripe_token %>
-    <p>Credit card acceptance is pending.</p>
-  <% else %>
-    <div class="field">
-      <%= label_tag :card_number, "Credit Card Number" %>
-      <%= text_field_tag :card_number, nil, name: nil %>
-    </div>
-    <div class="field">
-      <%= label_tag :card_code, "Card Security Code (CVV)" %>
-      <%= text_field_tag :card_code, nil, name: nil %>
-    </div>
-    <div class="field">
-      <%= label_tag :card_month, "Card Expiration" %>
-      <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
-      <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+10}, {name: nil, id: "card_year"}%>
-    </div>
-    <div class="field">
-      <%= f.input :coupon, :label => 'Promotional Coupon (if any)' %>
-    </div>
+      <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <% end %>
-  <%= f.hidden_field :stripe_token %>
-  <%= f.button :submit, 'Sign up', :class => 'btn-primary' %>
+  <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'card_form form-vertical' }) do |f| %>
+  <section class="blue">
+    <div class="panel" id="personal_card_panel">
+      
+      <div id="stripe_error" class="alert alert-error" style="display:none"></div>
+      <div class="l_font f_black" id="signup_label">Sign Up</div>
+     
+      <div id="user_info_input"> 
+        <div class="ml_font f_black information_label">
+          Your Information
+        </div>
+        <!-- <h3><%= params[:plan].titleize if params[:plan] %> Subscription Plan</h3> -->
+        <%= hidden_field_tag 'plan', params[:plan] %>
+        <%= f.error_notification %>
+        <%= display_base_errors resource %>
+        <%= f.input :name, :autofocus => true %> 
+        <%= f.input :email, :required => true %>
+        <%= f.input :password, :required => true %>
+        <%= f.input :password_confirmation, :required => true %>
+      </div>
+
+      <% if @user.stripe_token %>
+        <p>Credit card acceptance is pending.</p>
+      <% else %>
+        <div id="payment_info_input">
+          <div class="ml_font b_white information_label">
+            Card Information
+          </div>
+          <div class="field">
+            <%= label_tag :card_number, "Credit Card Number" %>
+            <%= text_field_tag :card_number, nil, name: nil %>
+          </div>
+          <div class="field">
+            <%= label_tag :card_code, "Card Security Code (CVV)" %>
+            <%= text_field_tag :card_code, nil, name: nil %>
+          </div>
+          <div class="field">
+            <%= label_tag :card_month, "Card Expiration" %>
+            <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
+            <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+10}, {name: nil, id: "card_year"}%>
+          </div>
+          <div class="field">
+            <%= f.input :coupon, :label => 'Promotional Coupon (if any)' %>
+          </div>
+        </div>
+      <% end %>
+    </div>  
+  </section>
+  <section class="grey">
+    <div class="seperation">
+      <div class="seperation-left"></div>
+      <div class="seperation-right"></div>
+    </div>
+    <div class="panel" id="shipping_panel">
+
+      <%= f.hidden_field :stripe_token %>  
+      <div id="billing_address_input">
+        <div class="ml_font f_black information_label">
+          Billing Address
+        </div>
+        <div class="field">
+          <%= f.input :b_address, :label => "Street Address" %>
+        </div>
+        <div class="field">
+          <%= f.input :b_suite_apt, :label => "Suite/Apt #"%>
+        </div>
+        <div class="field">
+          <%= f.input :b_city, :label => "City" %>
+        </div>
+        <div class="field">
+          <%= f.input :b_state, :label => "State" %>
+        </div>
+        <div class="field">
+          <%= f.input :b_zipcode, :label => "Zipcode" %>
+        </div>
+        <div class="field">
+          <%= f.input :b_country, :label => "Country" %>
+        </div>
+      </div>
+
+      <div id="shipping_address_input">
+        <div class="ml_font f_black information_label">
+          Shipping Address
+        </div>
+        <div class="field">
+          <%= f.input :s_address, :label => "Street Address" %>
+        </div>
+        <div class="field">
+          <%= f.input :s_suite_apt, :label => "Suite/Apt #"%>
+        </div>
+        <div class="field">
+          <%= f.input :s_city, :label => "City" %>
+        </div>
+        <div class="field">
+          <%= f.input :s_state, :label => "State" %>
+        </div>
+        <div class="field">
+          <%= f.input :s_zipcode, :label => "Zipcode" %>
+        </div>
+        <div class="field">
+          <%= f.input :s_country, :label => "Country" %>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <section class="blue">
+    <div class="seperation">
+      <div class="seperation-left"></div>
+      <div class="seperation-right"></div>
+    </div>
+    <div class="panel" id="submit_panel">
+      <div id="submit_form_holder">    
+        <%= f.button :submit, 'Sign up', :class => 'btn-primary',:id => "signup_button" %>
+      </div>  
+    </div>
+  </section>
 <% end %>

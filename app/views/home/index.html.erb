@@ -1,30 +1,62 @@
-<div id="welcome" class="hero-unit span7">
-  <h1>Membership Site</h1>
-  <h3>Learn to build a successful subscription site.</h3>
-</div>
-<div class="row span8 plans">
-  <div class="span2 well">
-    <div class="plan"><h2>Silver</h2></div>
-    <ul class="unstyled">
-      <li>One lesson a month</li>
-    </ul>
-    <h3>$9/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'silver'), :class => 'btn btn-primary' %> 
+<section class="blue">
+  <div class="panel" id="welcome_panel">
+    <div id="home_content">
+      Monthly<br><br><br><br>
+      Supplement<br><br><br><br>
+      Samples
+    <!-- 
+    <iframe width="640" height="360" src="http://www.youtube.com/embed/4tnUlMhX3hQ" frameborder="0" allowfullscreen></iframe> -->
+  </div>   
   </div>
-  <div class="span2 well featured">
-    <div class="plan featured-plan"><h2>Gold</h2></div>
-    <ul class="unstyled">
-      <li>Ten lessons a month</li>
-    </ul>
-    <h3>$19/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'gold'), :class => 'btn btn-primary' %> 
+</section>
+
+<a name="info" id="anchor"></a>
+
+<section class="blue">
+  <div class="seperation">
+    <div class="seperation-left"></div>
+    <div class="seperation-right"></div>
   </div>
-  <div class="span2 well">
-    <div class="plan"><h2>Platinum</h2></div>
-    <ul class="unstyled">
-      <li>Thirty lessons a month</li>
-    </ul>
-    <h3>$29/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'platinum'), :class => 'btn btn-primary' %> 
+  <div class="panel" id="info_panel">
+    <div class="l_font f_white" id="info_head">
+      DISCOVER WHAT SUPPLEMENTS WORK BEST
+      <br><br>
+      WITH YOUR BODY FOR ONLY $10/MONTH. 
+      <br><br>
+      CANCEL ANYTIME</div>
+      <br><br><br>
+    <div class="m_font f_white" id="info_body">
+      Each bundle comes with an assortment<br><br>
+      of supplements that you might not have <br><br>
+      tried otherwise!
+    </div>
+
+
+
+  </div>  
+</section>
+
+
+
+
+<section class="d_grey">
+  <div class="seperation">
+    <div class="seperation-left"></div>
+    <div class="seperation-right"></div>
   </div>
-</div>
+  <div class="panel" id="contact_panel">
+
+    <div id="contact_holder">
+      <div class="m_font" id="contact_text">Contact us:</div>
+      <br><br>
+      <a href="facebook.com" target="_blank"><img id="facebook_img" align="left" border="0"></a>
+      <a href="twitter.com/boostbundle" target="_blank"><img id="twitter_img" border="0"  align="left"></a>
+      <a href="youtube.com" target="_blank"><img id="youtube_img" border="0"  align="left"></a>
+      <a href="pinterest.com" target="_blank"><img id="pinterest_img" border="0"  align="left"></a>
+      <a href="google.com" target="_blank"><img id="gplus_img" border="0" align="left"></a>  
+    </div>
+  </div> 
+  
+</section>
+
+
