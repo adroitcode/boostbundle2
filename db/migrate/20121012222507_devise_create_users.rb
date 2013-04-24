@@ -56,7 +56,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
     add_index :users, :email,                :unique => true
     add_index :users, :reset_password_token, :unique => true
-    add_index :users, :b_address, :b_suite_apt, :b_city, :b_state, :b_zipcode, :b_country, :s_address, :s_suite_apt, :s_city, :s_state, :s_zipcode, :s_country
+    #add_index :users, :b_address, :b_suite_apt, :b_city, :b_state, :b_zipcode, :b_country, :s_address, :s_suite_apt, :s_city, :s_state, :s_zipcode, :s_country
     # add_index :users, :confirmation_token,   :unique => true
     # add_index :users, :unlock_token,         :unique => true
     # add_index :users, :authentication_token, :unique => true
