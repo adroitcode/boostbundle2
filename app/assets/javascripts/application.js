@@ -17,3 +17,13 @@
 
 
 
+function resize_panel() {
+    var height = $(window).height();
+    $("signup_panel").css('height',height);
+}
+
+$(document).ready(function() {
+    resize_panel
+    $(window).bind('resize', resize_panel);
+});
+
